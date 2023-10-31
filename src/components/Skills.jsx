@@ -9,11 +9,11 @@ import react from "../images/react.png";
 import npm from "../images/npm-logo.png";
 import github from "../images/github.png";
 
-const Skills = ({ darkMode }) => {
+const Skills = ({ darkMode, translate }) => {
   return (
     <div className={darkMode ? "dark " : "light "}>
       <main className="skills container">
-        <h1>Skills</h1>
+        {!translate ? <h1>Skills</h1> : <h1>Compétences</h1>}
         <div className="skills-logo">
           <img src={js} alt="javascript logo" />
           <img src={html} alt=" html logo" />

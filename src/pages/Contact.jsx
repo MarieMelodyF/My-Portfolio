@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import linkedin from "../images/linkedin.png";
 import github from "../images/gitlogo.png";
+import cv from "../images/CV-MarieMelodyFontana.pdf";
 
 function ContactForm({ darkMode }) {
   const [formData, setFormData] = useState({
@@ -81,15 +82,26 @@ function ContactForm({ darkMode }) {
             </form>
           </div>
           <div className="coord container">
-            <p>Vous pouvez également me cotnacter par téléphone : </p>
+            <p>Vous pouvez également me contacter par téléphone : </p>
             <p>Marie-Mélody Fontana</p>
             <p>06.98.39.19.90</p>
+            <a
+              href={cv}
+              target="blank"
+              className={darkMode ? "dark" : "light"}
+              style={{ textDecoration: "underline" }}
+            >
+              See Resume
+            </a>
             <div className="logo-contact">
-              <a href="https://www.linkedin.com/in/marie-melody-fontana-250205a7/">
+              <a
+                href="https://www.linkedin.com/in/marie-melody-fontana-250205a7/"
+                target="_blank"
+              >
                 <img src={linkedin} alt="logo linkedin" />
               </a>
 
-              <a href="https://github.com/MarieMelodyF">
+              <a href="https://github.com/MarieMelodyF" target="_blank">
                 <img src={github} alt="logo github" />
               </a>
             </div>

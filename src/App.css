@@ -101,8 +101,10 @@ section {
 .text-about {
   /* background-color: tomato; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  line-height: 25px;
   flex: 2;
 }
 .text-about p {
@@ -198,7 +200,7 @@ section {
   transition: 1s ease;
   opacity: 0;
   position: absolute;
-  top: 54%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -232,6 +234,15 @@ section {
   color: black;
 }
 
+.tech {
+  display: flex;
+  justify-content: space-around;
+}
+.tech span {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 4px;
+}
 /* ------------------------ */
 /* ------------------------ */
 /* ----------RAWG---------- */
@@ -246,7 +257,15 @@ section {
   /* padding-bottom: 10px; */
   line-height: 20px;
   /* border: 1px solid rgb(255, 0, 225); */
+  margin-top: -50px;
 }
+.translate {
+  width: 50px;
+  background-color: rgb(129, 127, 127);
+  display: flex;
+  justify-content: left;
+}
+
 .img-rawg img {
   height: 350px;
 }

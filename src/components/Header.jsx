@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-const Header = ({ darkMode, handleMode }) => {
+const Header = ({ darkMode, handleMode, translate }) => {
   const location = useLocation();
   const namePage = location.pathname;
   console.log(namePage);
@@ -20,7 +20,11 @@ const Header = ({ darkMode, handleMode }) => {
             </Link>
           ) : (
             <a href="#projects">
-              <h3 className={darkMode ? "dark" : "light"}>Projects</h3>
+              {translate === false ? (
+                <h3 className={darkMode ? "dark" : "light"}>Projects</h3>
+              ) : (
+                <h3 className={darkMode ? "dark" : "light"}>Projets</h3>
+              )}
             </a>
           )}
           <Link to="/contact">

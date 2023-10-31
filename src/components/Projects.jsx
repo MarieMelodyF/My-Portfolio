@@ -4,14 +4,15 @@ import vinted from "../images/vinted-project.png";
 import deliveroo from "../images/Deliveroo-project.png";
 import gamepad from "../images/gamepad-project.png";
 
-const Projects = ({ darkMode }) => {
+const Projects = ({ darkMode, translate }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <section className={darkMode ? "dark " : "light "}>
       <main id="projects" className="project container">
-        <h1>Projetcs</h1>
+        {!translate ? <h1>Projetcs</h1> : <h1>Projets</h1>}
+
         <div className="card-project">
           {/* FIRST PROJECT */}
           <div className="projects">
@@ -25,6 +26,10 @@ const Projects = ({ darkMode }) => {
                   </Link>
                 </div>
               </div>
+            </div>
+            <div className="tech">
+              <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
+              <span> API</span> <span>Axios</span> <span>Express</span>
             </div>
           </div>
 
@@ -41,6 +46,10 @@ const Projects = ({ darkMode }) => {
                   </Link>
                 </div>
               </div>
+            </div>
+            <div className="tech">
+              <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
+              <span> API</span> <span>Axios</span> <span>Express</span>
             </div>
           </div>
           {/* 
@@ -59,7 +68,12 @@ const Projects = ({ darkMode }) => {
                 </div>
               </div>
             </div>
+            <div className="tech">
+              <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
+              <span> API</span> <span>Axios</span> <span>Express</span>
+            </div>
           </div>
+
           {/* FOURTH PROJECT */}
           <div className="projects">
             <div className="cards">
@@ -72,6 +86,10 @@ const Projects = ({ darkMode }) => {
                   </Link>
                 </div>
               </div>
+            </div>
+            <div className="tech">
+              <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
+              <span> API</span>
             </div>
           </div>
         </div>

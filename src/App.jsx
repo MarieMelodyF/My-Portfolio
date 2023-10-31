@@ -24,6 +24,12 @@ function App() {
     }
   };
 
+  const [translate, settranslate] = useState(false);
+
+  const handleClick = () => {
+    settranslate(!translate);
+  };
+
   return (
     <div>
       <Router>
@@ -31,12 +37,28 @@ function App() {
           darkMode={darkMode}
           setDarkMode={setDarkMode}
           handleMode={handleMode}
+          translate={translate}
         />
         <Routes>
-          <Route path="/" element={<About darkMode={darkMode} />}></Route>
+          <Route
+            path="/"
+            element={
+              <About
+                darkMode={darkMode}
+                handleClick={handleClick}
+                translate={translate}
+              />
+            }
+          ></Route>
           <Route
             path="/project-rawg"
-            element={<Rawg darkMode={darkMode} />}
+            element={
+              <Rawg
+                darkMode={darkMode}
+                handleClick={handleClick}
+                translate={translate}
+              />
+            }
           ></Route>
           <Route
             path="/project-marvel"

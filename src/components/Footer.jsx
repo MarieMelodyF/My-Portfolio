@@ -1,3 +1,5 @@
+import { useState } from "react";
+useState;
 const Footer = ({ darkMode }) => {
   return (
     <footer className={darkMode ? "dark " : "light "}>
