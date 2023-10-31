@@ -5,6 +5,9 @@ import deliveroo from "../images/Deliveroo-project.png";
 import gamepad from "../images/gamepad-project.png";
 
 const Projects = ({ darkMode }) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <section className={darkMode ? "dark " : "light "}>
       <main id="projects" className="project container">
@@ -17,7 +20,7 @@ const Projects = ({ darkMode }) => {
               <img src={gamepad} alt="" className="image" />
               <div className="middle">
                 <div className="infos">
-                  <Link to="/project-rawg">
+                  <Link to="/project-rawg" onClick={scrollToTop}>
                     <p>Click for details</p>
                   </Link>
                 </div>
@@ -33,7 +36,7 @@ const Projects = ({ darkMode }) => {
               <img src={marvel} alt="" className="image" />
               <div className="middle">
                 <div className="infos">
-                  <Link to="/project-marvel">
+                  <Link to="/project-marvel" onClick={scrollToTop}>
                     <p>Click for details</p>
                   </Link>
                 </div>
@@ -41,24 +44,7 @@ const Projects = ({ darkMode }) => {
             </div>
           </div>
           {/* 
-          <div classname="projects">
-            <div className="cards">
-              <h3>MARVEL</h3>
-              <img src={marvel} alt="" classname="image" />
-              <div className="middle">
-                <div className="infos">
-                  <Link to="/project-marvel">
-                    <p>Click for details</p>
-                  </Link>
-                </div>
-              </div>
-              <p>
-                <a href="https://marvel-orion.netlify.app/" target="_blank">
-                  See more
-                </a>
-              </p>
-            </div>
-          </div> */}
+        
 
           {/* THIRD PROJECT */}
           <div className="projects">
@@ -66,20 +52,12 @@ const Projects = ({ darkMode }) => {
               <h3>VINTED</h3>
               <img src={vinted} alt="Avatar" className="image" />
               <div className="middle">
-                {/* <div class="mp4">
-                  <video loop autoPlay muted class="mp4">
-                    <source src={mov_vinted} type="video/mp4" />
-                  </video>
-                </div> */}
                 <div className="infos">
-                  <Link to="/project-vinted">
+                  <Link to="/project-vinted" onClick={scrollToTop}>
                     <p>Click for details</p>
                   </Link>
                 </div>
               </div>
-              {/* <p>
-                <a href="https://vinted-orion.netlify.app/">See more</a>
-              </p> */}
             </div>
           </div>
           {/* FOURTH PROJECT */}
@@ -88,20 +66,12 @@ const Projects = ({ darkMode }) => {
               <h3>DELIVEROO</h3>
               <img src={deliveroo} alt="Avatar" className="image" />
               <div className="middle">
-                {/* <div class="mp4">
-                  <video loop autoPlay muted class="mp4">
-                    <source src={mov_deliveroo} type="video/mp4" />
-                  </video>
-                </div> */}
                 <div className="infos">
-                  <Link to="/project-deliveroo">
+                  <Link to="/project-deliveroo" onClick={scrollToTop}>
                     <p>Click for details</p>
                   </Link>
                 </div>
               </div>
-              {/* <p>
-                <a href="https://deliveroo-copy.netlify.app/">See more</a>
-              </p> */}
             </div>
           </div>
         </div>

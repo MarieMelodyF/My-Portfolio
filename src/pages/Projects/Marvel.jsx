@@ -12,6 +12,11 @@ const Marvel = ({ darkMode }) => {
     <>
       <section className={darkMode ? "dark " : "light "}>
         <main>
+          <div className="title">
+            <h1>Marvel</h1>
+            <h3> Site de recensement des comics et personnages</h3>
+          </div>
+          <div className="underline"></div>
           <div className="rawg">
             <div className="car-rawg">
               <Swiper
@@ -44,57 +49,55 @@ const Marvel = ({ darkMode }) => {
             </div>
 
             <div className="about-rawg">
-              <div>
-                <h1>Marvel </h1>
-                <h1> Site de recensement des comics et personnages</h1>
+              <br />
 
-                <div className="underline"></div>
+              <div className="about-rigth">
+                <div className="col-left">
+                  {" "}
+                  <h5>Home :</h5>
+                  <p>- Entrez dans l'univers Marvel</p>
+                  {/* ---- */}
+                  <h5>Comics</h5>
+                  <p>- Aperçu des comcis existant.</p>
+                  <p>- Possibilité de changement de page</p>
+                  <p>- Boutton mettre favoris</p>
+                  <p>- Boutton Favoris</p>
+                  <p>- Boutton Sign up</p>
+                  <p>- Boutton Log in</p>
+                  {/* ---- */}
+                  <br />
+                  <h5>Characters :</h5>
+                  <p> - Aperçu des personnages existant.</p>
+                  <p>- Accéder au perssonnage au click</p>
+                  {/* ---- */}
+                </div>
+                <div className="col-rigth">
+                  <br />
+                  <h5>Character unique :</h5>
+                  <p> - Aperçu d'une description du personnage</p>
+                  <p>
+                    - Listes des différents comics dans lequel apparait le
+                    personnage
+                  </p>
+                  {/* ---- */}
+                  <br />
+                  <h5>Connexion :</h5>
+                  <p>- Possiblité de se connecter</p>
+                  <p>- Possibilité de créer un compte</p>
+                </div>
               </div>
-              <br />
-              <h5>Home :</h5>
-              <p>- Entrez dans l'univers Marvel</p>
-
-              {/* ---- */}
-              <h5>Comics</h5>
-              <p>- Aperçu des comcis existant.</p>
-              <p>- Possibilité de changement de page</p>
-              <p>- Boutton mettre favoris</p>
-              <p>- Boutton Favoris</p>
-              <p>- Boutton Sign up</p>
-              <p>- Boutton Log in</p>
-
-              {/* ---- */}
-              <br />
-              <h5>Characters :</h5>
-              <p> - Aperçu des personnages existant.</p>
-              <p>- Accéder au perssonnage au click</p>
-
-              {/* ---- */}
-              <br />
-              <h5>Character unique :</h5>
-              <p> - Aperçu d'une description du personnage</p>
-              <p>
-                - Listes des différents comics dans lequel apparait le
-                personnage
-              </p>
-              {/* ---- */}
-
-              <br />
-              <h5>Connexion :</h5>
-              <p>- Possiblité de se connecter</p>
-              <p>- Possibilité de créer un compte</p>
+              <div className="link">
+                <p className="text-focus-in">
+                  <a
+                    className={darkMode ? "dark " : "light "}
+                    href="https://marvel-orion.netlify.app"
+                    target="_blank"
+                  >
+                    Voir le projet
+                  </a>
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="link">
-            <p className="text-focus-in">
-              <a
-                className={darkMode ? "dark " : "light "}
-                href="https://marvel-orion.netlify.app/comics"
-                target="_blank"
-              >
-                Voir le projet
-              </a>
-            </p>
           </div>
         </main>
       </section>

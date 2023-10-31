@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 /* @import "./Header.css"; */
 @import "./animation.css";
+html {
+  scroll-behavior: smooth;
+}
 
 h1 {
   font-size: 40px;
@@ -44,6 +47,7 @@ a:hover {
 .container {
   width: 1320px;
   margin: 0 auto;
+  /* border: 1px solid red; */
 }
 .header {
   display: flex;
@@ -57,7 +61,8 @@ section .myname {
   justify-content: center;
   align-items: center;
   width: 450px;
-  margin-left: 100px;
+  margin-left: 1°0px;
+  margin: 2rem;
 }
 section {
   display: flex;
@@ -84,7 +89,7 @@ section {
 .aboutme h1 {
   font-size: 40px;
 }
-.aboutme img {
+.me img {
   height: 300px;
   border-radius: 50px;
 }
@@ -141,7 +146,7 @@ section {
 .project h1 {
   font-size: 50px;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 6rem;
   padding-bottom: 50px;
 }
 .projects p {
@@ -149,6 +154,20 @@ section {
 }
 .cards {
   text-align: center;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+}
+.underline {
+  height: 6px;
+  width: 500px;
+  background-color: rgba(84, 152, 163, 0.708);
+  position: absolute;
+  top: 193px;
+  left: 580px;
+  z-index: 1;
 }
 
 .card-project {
@@ -163,11 +182,14 @@ section {
 .projects {
   position: relative;
 }
+.projects img {
+  height: 200px;
+  border-radius: 10px;
+}
 
 .image {
   opacity: 1;
   object-fit: cover;
-  border-radius: 10px;
   margin: 20px 0;
   border: 1px solid rgb(115, 114, 114);
 }
@@ -176,14 +198,15 @@ section {
   transition: 1s ease;
   opacity: 0;
   position: absolute;
-  top: 53%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-
   /* margin-bottom: 40px; */
   background-color: rgb(233, 231, 231);
   border-radius: 10px;
+  height: 200px;
+  width: 390px;
 }
 
 .projects:hover .image {
@@ -195,16 +218,18 @@ section {
 }
 
 .infos {
-  color: black;
   font-size: 20px;
   font-weight: bold;
-  margin: 0 20px;
-  height: 300px;
-  width: 536px;
+  height: 250px;
+  width: 390px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
+}
+
+.infos a {
+  color: black;
 }
 
 /* ------------------------ */
@@ -218,34 +243,57 @@ section {
   align-items: center;
   gap: 100px;
   height: calc(100vh - 10vh);
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   line-height: 20px;
+  /* border: 1px solid rgb(255, 0, 225); */
 }
 .img-rawg img {
   height: 350px;
 }
-.underline {
-  height: 6px;
-  width: 600px;
-  background-color: rgba(17, 129, 149, 0.708);
-  position: absolute;
-  top: 270px;
 
-  z-index: 2;
+.contact-form {
+  height: calc(100vh - 10vh);
+}
+
+.title {
+  margin-top: 1rem;
+  text-align: center;
+  /* border: 1px solid rgb(0, 255, 153); */
+  line-height: 45px;
 }
 
 .car-rawg {
   display: flex;
   width: 600px;
+  /* border: 1px solid rgb(0, 255, 153); */
 }
 .about-rawg {
   height: auto;
-  width: 600px;
+  width: 700px;
+  /* border: 1px solid yellow; */
+}
+.about-rigth {
+  /* border: 1px solid salmon; */
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.col-left {
+  /* border: 1px solid rebeccapurple; */
+  width: 50%;
+  text-align: left;
+}
+
+.col-rigth {
+  /* border: 1px solid rgb(243, 237, 235); */
+  width: 50%;
+  text-align: left;
 }
 
 .link {
   margin-top: 3rem;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -257,5 +305,76 @@ section {
 
 footer {
   background-color: rgba(38, 36, 36, 0.306);
-  height: 200px;
+  padding-top: 1rem;
+}
+
+.foot {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ------------------------ */
+/* ------------------------ */
+/* ---------CONTACT-------- */
+/* ------------------------ */
+/* ------------------------ */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.logo-contact img {
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.logo-contact {
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  /* height: 400px; */
+  width: 500px;
+  /* border: 1px solid purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.coord {
+  padding: 30px 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  border: 1px solid rgba(169, 169, 169, 0.486);
+  border-radius: 10px;
+  line-height: 30px;
+  margin-top: 4rem;
 }

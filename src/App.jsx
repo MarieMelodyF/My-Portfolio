@@ -9,6 +9,7 @@ import Vinted from "./pages/Projects/Vinted";
 import Deliveroo from "./pages/Projects/Deliveroo";
 import Rawg from "./pages/Projects/GamePad";
 import Footer from "./components/Footer";
+import ContactForm from "./pages/Contact";
 
 function App() {
   const [darkMode, setDarkMode] = useState(Cookies.get("mode") || false);
@@ -48,6 +49,10 @@ function App() {
           <Route
             path="/project-deliveroo"
             element={<Deliveroo darkMode={darkMode} />}
+          ></Route>
+          <Route
+            path="/contact"
+            element={<ContactForm darkMode={darkMode} />}
           ></Route>
         </Routes>
       </Router>
