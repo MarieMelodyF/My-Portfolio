@@ -1,0 +1,162 @@
+/* DARK-LIGHT-MODE */
+:root {
+  --dark: #1e1e1e;
+}
+
+.mode-dark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(233, 195, 5);
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.mode-light {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(155, 154, 154);
+  background-color: var(--dark);
+  border: 1px solid var(--dark);
+  border-radius: 50%;
+}
+.dark {
+  background-color: var(--dark);
+  color: rgb(218, 217, 217);
+}
+.light {
+  background-color: rgb(246, 244, 244);
+  color: var(--dark);
+}
+/* HEADER */
+.scale-in-hor-center {
+  -webkit-animation: scale-in-hor-center 1.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+  animation: scale-in-hor-center 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s
+    both;
+}
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+    border-bottom: 1px solid rgb(182, 180, 180);
+  }
+}
+
+/* text header */
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+h2 {
+  font-size: clamp(2.8rem, 1.5vw, 3rem);
+  font-weight: bold;
+  margin: 5px;
+  background: linear-gradient(
+    to right,
+    #aa4b6b 20%,
+    #7b7bb0 30%,
+    #3b8d99 70%,
+    #2062ad 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+/* ABOUT */
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 1.5s
+    cubic-bezier(0.215, 0.61, 0.355, 1) 2s both;
+  animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 2s
+    both;
+}
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+/* Page RAWG */
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,64 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import "./App.css";
+import Cookies from "js-cookie";
+import Header from "./components/Header";
+import About from "./components/Aboutme";
+import Marvel from "./pages/Projects/Marvel";
+import Vinted from "./pages/Projects/Vinted";
+import Deliveroo from "./pages/Projects/Deliveroo";
+import Rawg from "./pages/Projects/GamePad";
+import Footer from "./components/Footer";
+
+function App() {
+  const [darkMode, setDarkMode] = useState(Cookies.get("mode") || false);
+
+  const handleMode = (mode) => {
+    if (mode) {
+      Cookies.set("mode", mode, { expires: 15 });
+      setDarkMode(mode);
+    } else {
+      Cookies.remove("mode");
+      setDarkMode(false);
+    }
+  };
+
+  return (
+    <div>
+      <Router>
+        <Header
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          handleMode={handleMode}
+        />
+        <Routes>
+          <Route path="/" element={<About darkMode={darkMode} />}></Route>
+          <Route
+            path="/project-rawg"
+            element={<Rawg darkMode={darkMode} />}
+          ></Route>
+          <Route
+            path="/project-marvel"
+            element={<Marvel darkMode={darkMode} />}
+          ></Route>
+          <Route
+            path="/project-vinted"
+            element={<Vinted darkMode={darkMode} />}
+          ></Route>
+          <Route
+            path="/project-deliveroo"
+            element={<Deliveroo darkMode={darkMode} />}
+          ></Route>
+        </Routes>
+      </Router>
+
+      <Footer
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        handleMode={handleMode}
+      />
+    </div>
+  );
+}
+
+export default App;
