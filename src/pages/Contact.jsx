@@ -1,6 +1,6 @@
-// ContactForm.js
 import React, { useState } from "react";
 import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 import linkedin from "../images/linkedin.png";
 import github from "../images/gitlogo.png";
 import cv from "../images/CV-MarieMelodyFontana.pdf";
@@ -19,21 +19,34 @@ function ContactForm({ darkMode }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const response = await axios.post(
         "http://localhost:3000/contact",
         formData
       );
+      toast.success("mail has been sent");
       console.log("E-mail envoyé avec succès", response.data);
-      // Réinitialisez le formulaire ou effectuez d'autres actions après l'envoi
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
     } catch (error) {
-      console.error("Erreur lors de l'envoi de l'e-mail", error);
+      console.error("Erreur lors de l'envoi de l'e-mail", error.response);
+      toast.error("Please fill in all fields");
     }
   };
 
   return (
     <main className={darkMode ? "dark" : "light"}>
+      <Toaster
+        toastOptions={{
+          style: {
+            borderRadius: "10px",
+            border: "2px solid #050505",
+            padding: "16px",
+            backgroundColor: "##d1d1d1",
+          },
+        }}
+      />
       <div className="contact-form">
         <div className="container">
           <div className="contact">
@@ -45,7 +58,7 @@ function ContactForm({ darkMode }) {
             >
               Contactez-Moi
             </h1>
-            <form onSubmit={handleSubmit}>
+            <form id="myForm" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name">Nom :</label>
                 <input
