@@ -13,7 +13,7 @@ const About = ({
     <section className={darkMode ? "dark " : "light "}>
       <main className="aboutme container">
         <button className="translate" onClick={handleClick}>
-          {translate === true ? <p>Eng</p> : <p>Fr</p>}
+          {translate ? <p>Traduire Ang</p> : <p>Translate Fr</p>}
         </button>
         <div className="title-about">
           {!translate ? (

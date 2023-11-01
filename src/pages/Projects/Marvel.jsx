@@ -20,7 +20,7 @@ const Marvel = ({ darkMode, translate, handleClick }) => {
               <h3> Site de recensement des comics et personnages</h3>
             )}
             <button className="translate" onClick={handleClick}>
-              {translate === true ? <p>Eng</p> : <p>Fr</p>}
+              {translate ? <p>Traduire Ang</p> : <p>Translate Fr</p>}
             </button>
           </div>
           <div className="underline"></div>
