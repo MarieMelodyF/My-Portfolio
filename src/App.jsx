@@ -62,15 +62,33 @@ function App() {
           ></Route>
           <Route
             path="/project-marvel"
-            element={<Marvel darkMode={darkMode} />}
+            element={
+              <Marvel
+                darkMode={darkMode}
+                handleClick={handleClick}
+                translate={translate}
+              />
+            }
           ></Route>
           <Route
             path="/project-vinted"
-            element={<Vinted darkMode={darkMode} />}
+            element={
+              <Vinted
+                darkMode={darkMode}
+                handleClick={handleClick}
+                translate={translate}
+              />
+            }
           ></Route>
           <Route
             path="/project-deliveroo"
-            element={<Deliveroo darkMode={darkMode} />}
+            element={
+              <Deliveroo
+                darkMode={darkMode}
+                handleClick={handleClick}
+                translate={translate}
+              />
+            }
           ></Route>
           <Route
             path="/contact"

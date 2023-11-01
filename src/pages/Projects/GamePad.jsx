@@ -24,7 +24,7 @@ const Rawg = ({ darkMode, handleClick, translate }) => {
             )}
 
             <button className="translate" onClick={handleClick}>
-              {translate === true ? <p>Eng</p> : <p>Fr</p>}
+              {translate ? <p>Traduire Ang</p> : <p>Translate Fr</p>}
             </button>
           </div>
           <div className="underline"></div>
@@ -58,7 +58,7 @@ const Rawg = ({ darkMode, handleClick, translate }) => {
 
             <div className="about-rawg">
               <div className="about-rigth">
-                {translate === false ? (
+                {!translate ? (
                   <div className="col-left">
                     <h5>Home :</h5>
                     <p>- Displays every video game in the world.</p>
@@ -173,15 +173,27 @@ const Rawg = ({ darkMode, handleClick, translate }) => {
                 )}
               </div>
               <div className="link">
-                <p className="text-focus-in">
-                  <a
-                    className={darkMode ? "dark " : "light "}
-                    href="https://rawg-clone-orion.netlify.app/"
-                    target="_blank"
-                  >
-                    Voir le projet
-                  </a>
-                </p>
+                {translate === false ? (
+                  <p className="text-focus-in">
+                    <a
+                      className={darkMode ? "dark " : "light "}
+                      href="https://rawg-clone-orion.netlify.app/"
+                      target="_blank"
+                    >
+                      See project{" "}
+                    </a>
+                  </p>
+                ) : (
+                  <p className="text-focus-in">
+                    <a
+                      className={darkMode ? "dark " : "light "}
+                      href="https://rawg-clone-orion.netlify.app/"
+                      target="_blank"
+                    >
+                      Voir le projet
+                    </a>
+                  </p>
+                )}
               </div>
             </div>
           </div>

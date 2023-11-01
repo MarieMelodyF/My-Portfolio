@@ -7,14 +7,21 @@ import fav from "/src/images/marvel/fav.png";
 import sign from "/src/images/marvel/sign.png";
 
 // /Users/mariemelo/Desktop/Portfolio/Portfolio V2/portfolio/src/images/marvel/homepage.png
-const Marvel = ({ darkMode }) => {
+const Marvel = ({ darkMode, translate, handleClick }) => {
   return (
     <>
       <section className={darkMode ? "dark " : "light "}>
         <main>
           <div className="title">
             <h1>Marvel</h1>
-            <h3> Site de recensement des comics et personnages</h3>
+            {!translate ? (
+              <h3> Comics and characters census site</h3>
+            ) : (
+              <h3> Site de recensement des comics et personnages</h3>
+            )}
+            <button className="translate" onClick={handleClick}>
+              {translate === true ? <p>Eng</p> : <p>Fr</p>}
+            </button>
           </div>
           <div className="underline"></div>
           <div className="rawg">
@@ -52,50 +59,99 @@ const Marvel = ({ darkMode }) => {
               <br />
 
               <div className="about-rigth">
-                <div className="col-left">
-                  {" "}
-                  <h5>Home :</h5>
-                  <p>- Entrez dans l'univers Marvel</p>
-                  {/* ---- */}
-                  <h5>Comics</h5>
-                  <p>- Aperçu des comcis existant.</p>
-                  <p>- Possibilité de changement de page</p>
-                  <p>- Boutton mettre favoris</p>
-                  <p>- Boutton Favoris</p>
-                  <p>- Boutton Sign up</p>
-                  <p>- Boutton Log in</p>
-                  {/* ---- */}
-                  <br />
-                  <h5>Characters :</h5>
-                  <p> - Aperçu des personnages existant.</p>
-                  <p>- Accéder au perssonnage au click</p>
-                  {/* ---- */}
-                </div>
-                <div className="col-rigth">
-                  <br />
-                  <h5>Character unique :</h5>
-                  <p> - Aperçu d'une description du personnage</p>
-                  <p>
-                    - Listes des différents comics dans lequel apparait le
-                    personnage
-                  </p>
-                  {/* ---- */}
-                  <br />
-                  <h5>Connexion :</h5>
-                  <p>- Possiblité de se connecter</p>
-                  <p>- Possibilité de créer un compte</p>
-                </div>
+                {translate === false ? (
+                  <div className="col-left">
+                    <h5>Home :</h5>
+                    <p>- Entrez the Marvel universe</p>
+                    {/* ---- */}
+                    <h5>Comics</h5>
+                    <p>- Overview of existing comcis,</p>
+                    <p>- Possibility to change page,</p>
+                    <p>- Favorites button</p>
+                    <p>- Button to acces on favorites</p>
+                    <p>- Sign up button </p>
+                    <p>- Log in button</p>
+                    {/* ---- */}
+                    <br />
+                    <h5>Characters :</h5>
+                    <p>- Overview of existing characters.</p>
+                    <p>- Click to access character</p>
+                    {/* ---- */}
+                  </div>
+                ) : (
+                  <div className="col-left">
+                    <h5>Home :</h5>
+                    <p>- Entrez dans l'univers Marvel</p>
+                    {/* ---- */}
+                    <h5>Comics</h5>
+                    <p>- Aperçu des comcis existant.</p>
+                    <p>- Possibilité de changement de page</p>
+                    <p>- Boutton mettre favoris</p>
+                    <p>- Boutton Favoris</p>
+                    <p>- Boutton Sign up</p>
+                    <p>- Boutton Log in</p>
+                    {/* ---- */}
+                    <br />
+                    <h5>Characters :</h5>
+                    <p> - Aperçu des personnages existant.</p>
+                    <p>- Accéder au personnage au click</p>
+                    {/* ---- */}
+                  </div>
+                )}
+
+                {translate === false ? (
+                  <div className="col-rigth">
+                    <br />
+                    <h5> Unique Character :</h5>
+                    <p>- Preview of a character description</p>
+                    <p>
+                      - List of comics in which the character appears character
+                    </p>
+                    {/* ---- */}
+                    <br />
+                    <h5>Connexion :</h5>
+                    <p>- Possibility of logging in</p>
+                    <p>- Possibility to create an account</p>
+                  </div>
+                ) : (
+                  <div className="col-rigth">
+                    <br />
+                    <h5>Character unique :</h5>
+                    <p> - Aperçu d'une description du personnage</p>
+                    <p>
+                      - Listes des différents comics dans lequel apparait le
+                      personnage
+                    </p>
+                    {/* ---- */}
+                    <br />
+                    <h5>Connexion :</h5>
+                    <p>- Possiblité de se connecter</p>
+                    <p>- Possibilité de créer un compte</p>
+                  </div>
+                )}
               </div>
               <div className="link">
-                <p className="text-focus-in">
-                  <a
-                    className={darkMode ? "dark " : "light "}
-                    href="https://marvel-orion.netlify.app"
-                    target="_blank"
-                  >
-                    Voir le projet
-                  </a>
-                </p>
+                {translate === false ? (
+                  <p className="text-focus-in">
+                    <a
+                      className={darkMode ? "dark " : "light "}
+                      href="https://marvel-orion.netlify.app"
+                      target="_blank"
+                    >
+                      See project
+                    </a>
+                  </p>
+                ) : (
+                  <p className="text-focus-in">
+                    <a
+                      className={darkMode ? "dark " : "light "}
+                      href="https://marvel-orion.netlify.app"
+                      target="_blank"
+                    >
+                      Voir le projet
+                    </a>
+                  </p>
+                )}
               </div>
             </div>
           </div>

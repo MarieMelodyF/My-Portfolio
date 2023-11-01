@@ -260,10 +260,11 @@ section {
   margin-top: -50px;
 }
 .translate {
-  width: 50px;
+  width: 100px;
   background-color: rgb(129, 127, 127);
   display: flex;
   justify-content: left;
+  cursor: pointer;
 }
 
 .img-rawg img {
