@@ -10,6 +10,7 @@ import Deliveroo from "./pages/Projects/Deliveroo";
 import Rawg from "./pages/Projects/GamePad";
 import Footer from "./components/Footer";
 import ContactForm from "./pages/Contact";
+import SnakeGame from "./SnakeGame/SnakeGame";
 
 function App() {
   const [darkMode, setDarkMode] = useState(Cookies.get("mode") || false);
@@ -93,6 +94,10 @@ function App() {
           <Route
             path="/contact"
             element={<ContactForm darkMode={darkMode} />}
+          ></Route>
+          <Route
+            path="/fun"
+            element={<SnakeGame darkMode={darkMode} />}
           ></Route>
         </Routes>
       </Router>

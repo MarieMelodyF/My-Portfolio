@@ -30,6 +30,9 @@ const Header = ({ darkMode, handleMode, translate }) => {
           <Link to="/contact">
             <h3 className={darkMode ? "dark" : "light"}>Contact</h3>
           </Link>
+          <Link to="/fun">
+            <h3 className={darkMode ? "dark" : "light"}> Have Fun 😉</h3>
+          </Link>
         </div>
         <button
           className={darkMode ? "mode-dark" : "mode-light"}
