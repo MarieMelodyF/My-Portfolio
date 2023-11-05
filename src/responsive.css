@@ -37,11 +37,11 @@
     width: auto;
     margin-left: 10px;
     margin: 2rem;
-    border: 1px solid rgb(47, 255, 0);
+    /* border: 1px solid rgb(47, 255, 0); */
     font-size: 30px;
   }
   .scale-in-hor-center {
-    border: 1px solid slateblue;
+    /* border: 1px solid slateblue; */
     width: auto;
     display: flex;
     align-items: center;
@@ -65,11 +65,11 @@
     width: auto;
     margin-left: 10px;
     margin: 2rem;
-    border: 1px solid rgb(47, 255, 0);
+    /* border: 1px solid rgb(47, 255, 0); */
     font-size: 30px;
   }
   .scale-in-hor-center {
-    border: 1px solid slateblue;
+    /* border: 1px solid slateblue; */
     width: auto;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@
   .aboutme.container {
     width: 900px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .header {
     display: flex;
@@ -105,7 +105,7 @@
   .header {
     height: 100px;
     width: auto;
-    border: 1px solid rgb(255, 183, 0);
+    /* border: 1px solid rgb(255, 183, 0); */
     display: flex;
     gap: 1rem;
   }
@@ -117,11 +117,11 @@
     width: 700px;
     margin-left: 10px;
     margin: 2rem;
-    border: 1px solid rgb(47, 255, 0);
+    /* border: 1px solid rgb(47, 255, 0); */
     font-size: 30px;
   }
   .scale-in-hor-center {
-    border: 1px solid slateblue;
+    /* border: 1px solid slateblue; */
     width: auto;
     display: flex;
     align-items: center;
@@ -130,14 +130,14 @@
   .aboutme.container {
     width: 700px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .card-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgb(47, 255, 0);
+    /* border: 1px solid rgb(47, 255, 0); */
     gap: 2rem;
     padding: 2rem;
   }
@@ -184,20 +184,20 @@
     align-items: center;
     width: auto;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .card-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgb(47, 255, 0);
+    /* border: 1px solid rgb(47, 255, 0); */
     gap: 2rem;
     /* padding: 2rem; */
   }
   .header {
     height: 100px;
     width: 200px;
-    border: 1px solid rgb(255, 183, 0);
+    /* border: 1px solid rgb(255, 183, 0); */
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -209,11 +209,11 @@
     width: auto;
     margin-left: 10px;
     margin: 2rem;
-    border: 1px solid rgb(47, 255, 0);
+    /* border: 1px solid rgb(47, 255, 0); */
     font-size: 30px;
   }
   .scale-in-hor-center {
-    border: 1px solid slateblue;
+    /* border: 1px solid slateblue; */
     width: auto;
     display: flex;
     align-items: center;
@@ -246,6 +246,29 @@
     font-size: 18px;
   }
 }
+@media screen and (max-width: 390px) {
+  .aboutme .translate {
+    margin: 0 3rem;
+  }
+  .card-me img {
+    height: 200px !important;
+  }
+  .card-me {
+    margin: 0 2rem;
+    text-align: justify;
+  }
+  div .skills-logo {
+    width: 380px;
+  }
+
+  div .skills h1 {
+    width: 390px;
+  }
+
+  div .project img {
+    height: 150px;
+  }
+}
 
 /* --------------------------- */
 /* --------------------------- */
@@ -256,14 +279,6 @@
 /* 1124px */
 /* --------------------------- */
 @media screen and (max-width: 1124px) {
-  .container-project {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid red;
-  }
-
   .col-left {
     /* border: 1px solid rebeccapurple; */
     width: 50%;
@@ -277,85 +292,106 @@
     width: 50%;
     text-align: left;
   }
-  .about-rawg {
-    height: 600px;
-    /* width: 700px; */
-    /* border: 1px solid yellow; */
-  }
-  .car-rawg {
-    display: flex;
-    width: 600px;
-    /* border: 1px solid rgb(0, 255, 153); */
-  }
+
   footer {
     height: calc(100vh - 90vh);
   }
 }
 
-/* 980PX */
-/* --------------------------- */
-@media screen and (max-width: 980px) {
-}
-
-/* 730p */
+/* 730px */
 /* --------------------------- */
 @media screen and (max-width: 730px) {
+  div .container-project {
+    width: 450px;
+  }
+  div .underline {
+    top: 80px;
+    left: 25px;
+  }
+
+  div .about-rawg {
+    height: auto;
+    width: 450px;
+    /* border: 1px solid yellow; */
+  }
+  div .car-rawg {
+    display: flex;
+    width: 400px;
+    /* border: 1px solid rgb(0, 255, 153); */
+  }
+  div .img-rawg img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+  }
+
+  footer {
+    height: calc(100vh - 90vh);
+  }
+
+  .rawg h1 {
+    font-size: 25px;
+  }
+
+  .rawg h3 {
+    font-size: 22px;
+  }
+
+  div .header {
+    width: 200px;
+  }
+
+  .auto-head {
+    margin: 0 auto;
+    width: 450px;
+    /* border: 1px solid red; */
+  }
+
+  .scale-in-hor-center {
+    margin: 0 auto;
+    /* border: 1px solid slateblue; */
+    width: 450px;
+  }
+
+  .about-rigth {
+    font-size: 15px;
+  }
 }
 
-/* .translate {
-    width: 100px;
-    background-color: rgb(129, 127, 127);
-    display: flex;
-    justify-content: left;
-    cursor: pointer;
+/* 390px */
+/* --------------------------- */
+@media screen and (max-width: 390px) {
+  div .container-project {
+    width: 390px;
+  }
+  div .underline {
+    top: 80px;
+    left: 60px;
+    width: 270px;
   }
 
-  .img-rawg img {
-    height: 350px;
-  }
-
-  .contact-form {
-    height: calc(100vh - 10vh);
-  }
-
-  .title {
-    margin-top: 1rem;
-    text-align: center;
-    border: 1px solid rgb(0, 255, 153);
-    line-height: 45px;
-  }
-
-  .car-rawg {
-    display: flex;
-    width: 600px;
-    border: 1px solid rgb(0, 255, 153);
-  }
-  .about-rawg {
+  div .about-rawg {
     height: auto;
-    width: 700px;
-    border: 1px solid yellow;
+    width: 390px;
+    /* border: 1px solid yellow; */
   }
-  .about-rigth {
-    border: 1px solid salmon;
+  div .car-rawg {
     display: flex;
-    justify-content: start;
-    gap: 1rem;
+    width: 400px;
+    /* border: 1px solid rgb(0, 255, 153); */
+  }
+  div .img-rawg img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
   }
 
-  .col-left {
-    border: 1px solid rebeccapurple;
-    width: 50%;
-    text-align: left;
+  .about-rigth {
+    font-size: 13px;
+    padding: 2rem;
   }
 
-  .col-rigth {
-    border: 1px solid rgb(243, 237, 235);
-    width: 50%;
-    text-align: left;
+  .translate {
+    margin: 2rem;
   }
-
-  .link {
-    margin-top: 3rem;
-    font-size: 25px;
-    text-align: center;
-  } */
+}
