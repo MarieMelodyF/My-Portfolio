@@ -1,0 +1,361 @@
+/* --------------------------- */
+/* --------------------------- */
+/* ------RESPONSIVE HOME------ */
+/* --------------------------- */
+/* --------------------------- */
+
+/* 1350PX */
+/* --------------------------- */
+
+@media screen and (max-width: 1350px) {
+  .aboutme {
+    padding-top: 150px;
+  }
+  .aboutme.container {
+    width: 1010px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+  .card-me {
+    padding: 2rem;
+  }
+  .skills-logo {
+    width: 1000px;
+  }
+  .header {
+    height: 100px;
+    width: 200px;
+    /* border: 1px solid rgb(255, 183, 0); */
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2px;
+  }
+  .header h3 {
+    font-size: 15px;
+  }
+  section .myname {
+    width: auto;
+    margin-left: 10px;
+    margin: 2rem;
+    border: 1px solid rgb(47, 255, 0);
+    font-size: 30px;
+  }
+  .scale-in-hor-center {
+    border: 1px solid slateblue;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+/* 1050px */
+/* --------------------------- */
+@media screen and (max-width: 1050px) {
+  .header {
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid rgb(255, 183, 0); */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .header h3 {
+    font-size: 15px;
+  }
+  section .myname {
+    width: auto;
+    margin-left: 10px;
+    margin: 2rem;
+    border: 1px solid rgb(47, 255, 0);
+    font-size: 30px;
+  }
+  .scale-in-hor-center {
+    border: 1px solid slateblue;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .aboutme {
+    padding-top: 150px;
+  }
+  .aboutme.container {
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 350px;
+  }
+
+  .card-me {
+    padding: 2rem;
+  }
+  .skills-logo {
+    width: 900px;
+  }
+}
+
+/* 980PX */
+/* --------------------------- */
+@media screen and (max-width: 980px) {
+  .header {
+    height: 100px;
+    width: auto;
+    border: 1px solid rgb(255, 183, 0);
+    display: flex;
+    gap: 1rem;
+  }
+  .header h3 {
+    font-size: 18px;
+  }
+
+  section .myname {
+    width: 700px;
+    margin-left: 10px;
+    margin: 2rem;
+    border: 1px solid rgb(47, 255, 0);
+    font-size: 30px;
+  }
+  .scale-in-hor-center {
+    border: 1px solid slateblue;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .aboutme.container {
+    width: 700px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+
+  .card-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(47, 255, 0);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  div .title-about h1 {
+    font-size: 30px;
+  }
+  div .text-about p {
+    font-size: 18px;
+  }
+
+  div .skills-logo img {
+    height: 35px;
+  }
+  div .skills h1 {
+    width: 700px;
+    font-size: 30px;
+  }
+  .skills-logo {
+    width: 700px;
+  }
+
+  div .project h1 {
+    font-size: 30px;
+  }
+  div .cards h3 {
+    font-size: 20px;
+  }
+}
+
+/* 730px */
+/* --------------------------- */
+@media screen and (max-width: 730px) {
+  .aboutme.container {
+    width: 450px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+  }
+
+  .auto-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+  .card-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(47, 255, 0);
+    gap: 2rem;
+    /* padding: 2rem; */
+  }
+  .header {
+    height: 100px;
+    width: 200px;
+    border: 1px solid rgb(255, 183, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .header h3 {
+    font-size: 15px;
+  }
+  section .myname {
+    width: auto;
+    margin-left: 10px;
+    margin: 2rem;
+    border: 1px solid rgb(47, 255, 0);
+    font-size: 30px;
+  }
+  .scale-in-hor-center {
+    border: 1px solid slateblue;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+  div .aboutme h1 {
+    font-size: 20px;
+  }
+  div .text-about p {
+    font-size: 13px;
+  }
+
+  div .skills h1 {
+    width: 450px;
+    font-size: 25px;
+  }
+
+  div .skills-logo img {
+    height: 25px;
+  }
+  div .skills-logo {
+    width: 450px;
+  }
+  .project img {
+    height: 150px;
+  }
+  div .project h1 {
+    font-size: 25px;
+  }
+  div .cards h3 {
+    font-size: 18px;
+  }
+}
+
+/* --------------------------- */
+/* --------------------------- */
+/* ----RESPONSIVE PROJECTS---- */
+/* --------------------------- */
+/* --------------------------- */
+
+/* 1124px */
+/* --------------------------- */
+@media screen and (max-width: 1124px) {
+  .container-project {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+  }
+
+  .col-left {
+    /* border: 1px solid rebeccapurple; */
+    width: 50%;
+    /* height: 200px; */
+    text-align: left;
+  }
+
+  .col-rigth {
+    /* height: 200px; */
+    /* border: 1px solid rgb(243, 237, 235); */
+    width: 50%;
+    text-align: left;
+  }
+  .about-rawg {
+    height: 600px;
+    /* width: 700px; */
+    /* border: 1px solid yellow; */
+  }
+  .car-rawg {
+    display: flex;
+    width: 600px;
+    /* border: 1px solid rgb(0, 255, 153); */
+  }
+  footer {
+    height: calc(100vh - 90vh);
+  }
+}
+
+/* 980PX */
+/* --------------------------- */
+@media screen and (max-width: 980px) {
+}
+
+/* 730p */
+/* --------------------------- */
+@media screen and (max-width: 730px) {
+}
+
+/* .translate {
+    width: 100px;
+    background-color: rgb(129, 127, 127);
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+  }
+
+  .img-rawg img {
+    height: 350px;
+  }
+
+  .contact-form {
+    height: calc(100vh - 10vh);
+  }
+
+  .title {
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid rgb(0, 255, 153);
+    line-height: 45px;
+  }
+
+  .car-rawg {
+    display: flex;
+    width: 600px;
+    border: 1px solid rgb(0, 255, 153);
+  }
+  .about-rawg {
+    height: auto;
+    width: 700px;
+    border: 1px solid yellow;
+  }
+  .about-rigth {
+    border: 1px solid salmon;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  .col-left {
+    border: 1px solid rebeccapurple;
+    width: 50%;
+    text-align: left;
+  }
+
+  .col-rigth {
+    border: 1px solid rgb(243, 237, 235);
+    width: 50%;
+    text-align: left;
+  }
+
+  .link {
+    margin-top: 3rem;
+    font-size: 25px;
+    text-align: center;
+  } */
