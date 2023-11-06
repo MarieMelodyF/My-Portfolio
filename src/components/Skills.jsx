@@ -12,7 +12,7 @@ import github from "../images/github.png";
 const Skills = ({ darkMode, translate }) => {
   return (
     <div className={darkMode ? "dark " : "light "}>
-      <main className="skills container">
+      <main className="skills ">
         {!translate ? <h1>Skills</h1> : <h1>Compétences</h1>}
         <div className="skills-logo">
           <img src={js} alt="javascript logo" />

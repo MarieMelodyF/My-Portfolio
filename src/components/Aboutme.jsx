@@ -22,7 +22,7 @@ const About = ({
             <h1 className="tracking-in-contract"> A Propos de moi :</h1>
           )}
         </div>
-        <div className="card-me">
+        <div className="card-me ">
           <div className="me">
             <img src={me} style={{ height: "300px" }} alt="" />
           </div>
