@@ -20,17 +20,6 @@ const Projects = ({ darkMode, translate }) => {
         <div className="card-project">
           {/* FIRST PROJECT */}
           <div className="projects">
-            {/* <div className="cards">
-              <h3>GAMEPAD</h3>
-              <img src={gamepad} alt="" className="image" />
-              <div className="middle">
-                <div className="infos">
-                  <Link to="/project-rawg" onClick={scrollToTop}>
-                    <p>Click for details</p>
-                  </Link>
-                </div>
-              </div>
-            </div> */}
             <div class="myCard GamePad">
               <div class="innerCard">
                 <div class="frontSide"></div>
@@ -91,23 +80,6 @@ const Projects = ({ darkMode, translate }) => {
           </div>
 
           {/* FOURTH PROJECT */}
-          {/* <div className="projects">
-            <div className="cards">
-              <h3>DELIVEROO</h3>
-              <img src={deliveroo} alt="Avatar" className="image" />
-              <div className="middle">
-                <div className="infos">
-                  <Link to="/project-deliveroo" onClick={scrollToTop}>
-                    <p>Click for details</p>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="tech">
-              <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
-              <span> API</span>
-            </div>
-          </div> */}
         </div>
         {/* --------------- */}
       </main>

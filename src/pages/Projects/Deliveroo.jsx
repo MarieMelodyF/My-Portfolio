@@ -3,7 +3,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import homepage from "/src/images/deliveroo/homepage.png";
 import countermenu from "/src/images/deliveroo/countermenu.png";
 
-// /Users/mariemelo/Desktop/Portfolio/Portfolio V2/portfolio/src/images/marvel/homepage.png
 const Deliveroo = ({ darkMode, translate, handleClick }) => {
   return (
     <>
