@@ -152,8 +152,31 @@
   div .cards h3 {
     font-size: 20px;
   }
+  /* modal */
+
+  div .coord {
+    width: auto;
+  }
 }
 
+/* 790px  */
+/* --------------------------- */
+@media screen and (max-width: 790px) {
+  div .modal-content {
+    width: auto;
+    height: auto;
+  }
+  div .contact {
+    display: flex;
+    background-color: rgb(30, 30, 30);
+  }
+  div .coord {
+    height: 100px;
+  }
+  form {
+    height: 300px;
+  }
+}
 /* 730px */
 /* --------------------------- */
 @media screen and (max-width: 730px) {
@@ -220,6 +243,48 @@
     width: auto;
   }
 }
+/* 600px */
+/* --------------------------- */
+@media screen and (max-width: 600px) {
+  div .modal-content {
+    /* width: auto; */
+    width: 400px;
+    height: auto;
+    font-size: 15px;
+  }
+
+  .modal h1 {
+    text-align: center;
+  }
+  div .contact {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(30, 30, 30);
+    gap: 20px;
+    width: 410px;
+    padding-top: 0;
+  }
+  div .coord {
+    height: auto;
+    width: 300px;
+    font-size: 15px;
+    text-align: center;
+  }
+  form {
+    height: 300px;
+    width: 300px !important;
+  }
+  form input {
+    width: 200px;
+    height: 10px;
+  }
+  textarea {
+    width: 200px;
+  }
+}
+
+/* 390px */
+/* --------------------------- */
 @media screen and (max-width: 390px) {
   div .text {
     display: flex;
@@ -288,6 +353,54 @@
     width: auto;
     width: 300px !important;
     font-size: 25px;
+  }
+
+  /* FORM CONTACT */
+  div .modal-root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  div .modal-content {
+    width: 300px;
+    height: auto;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .modal h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  div .contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  div .coord {
+    height: 130px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 10px;
+    line-height: 22px;
+    margin-top: 1rem;
+  }
+  form {
+    height: 300px;
+    width: 300px !important;
+  }
+  form input {
+    width: 200px;
+    height: 10px;
+  }
+  textarea {
+    width: 200px;
   }
 }
 
