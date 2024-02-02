@@ -15,7 +15,7 @@ import ContactForm from "./pages/Contact";
 import SnakeGame from "./SnakeGame/SnakeGame";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(Cookies.get("mode") || false);
+  const [darkMode, setDarkMode] = useState(Cookies.get("mode") || true);
   const [visible, setVisible] = useState(false);
   console.log(visible);
 

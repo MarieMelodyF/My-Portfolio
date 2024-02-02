@@ -153,7 +153,7 @@
     rgb(200, 80, 192) 46%,
     rgb(255, 204, 112) 100%
   );
-  background-image: url("src/images/marvel/homepage.png");
+  background-image: url("images/marvel/homepage.png");
   background-size: cover;
   background-position: center;
 }
@@ -166,7 +166,7 @@
     rgb(200, 80, 192) 46%,
     rgb(255, 204, 112) 100%
   );
-  background-image: url("src/images/rawg/Home.png");
+  background-image: url("images/rawg/Home.png");
   background-size: cover;
   background-position: center;
 }
@@ -179,7 +179,7 @@
     rgb(200, 80, 192) 46%,
     rgb(255, 204, 112) 100%
   );
-  background-image: url("src/images/Vinted/homepage.png");
+  background-image: url("images/Vinted/homepage.png");
   background-size: cover;
   background-position: center;
 }
