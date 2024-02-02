@@ -11,12 +11,16 @@ const Projects = ({ darkMode, translate }) => {
   return (
     <section className={darkMode ? "dark " : "light "}>
       <main id="projects" className="project container">
-        {!translate ? <h1>Projetcs</h1> : <h1>Projets</h1>}
+        {!translate ? (
+          <h1 className="text-shadow-pop-left ">Projetcs</h1>
+        ) : (
+          <h1 className="text-shadow-pop-left  ">Projets</h1>
+        )}
 
         <div className="card-project">
           {/* FIRST PROJECT */}
           <div className="projects">
-            <div className="cards">
+            {/* <div className="cards">
               <h3>GAMEPAD</h3>
               <img src={gamepad} alt="" className="image" />
               <div className="middle">
@@ -26,7 +30,18 @@ const Projects = ({ darkMode, translate }) => {
                   </Link>
                 </div>
               </div>
+            </div> */}
+            <div class="myCard GamePad">
+              <div class="innerCard">
+                <div class="frontSide"></div>
+                <div class="backSide">
+                  <Link to="/project-rawg" onClick={scrollToTop}>
+                    <p>Click for details</p>
+                  </Link>
+                </div>
+              </div>
             </div>
+            <p class="titleProject">GamePad</p>
             <div className="tech">
               <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
               <span> API</span> <span>Axios</span> <span>Express</span>
@@ -34,19 +49,19 @@ const Projects = ({ darkMode, translate }) => {
           </div>
 
           {/* SECOND PROJECT */}
-
           <div className="projects">
-            <div className="cards">
-              <h3>MARVEL</h3>
-              <img src={marvel} alt="" className="image" />
-              <div className="middle">
-                <div className="infos">
+            <div class="myCard Marvel">
+              <div class="innerCard">
+                <div class="frontSide"></div>
+                <div class="backSide">
                   <Link to="/project-marvel" onClick={scrollToTop}>
                     <p>Click for details</p>
                   </Link>
+                  <p>Leave Me</p>
                 </div>
               </div>
             </div>
+            <p class="titleProject">Marvel</p>
             <div className="tech">
               <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
               <span> API</span> <span>Axios</span> <span>Express</span>
@@ -57,17 +72,18 @@ const Projects = ({ darkMode, translate }) => {
 
           {/* THIRD PROJECT */}
           <div className="projects">
-            <div className="cards">
-              <h3>VINTED</h3>
-              <img src={vinted} alt="Avatar" className="image" />
-              <div className="middle">
-                <div className="infos">
+            <div class="myCard Vinted">
+              <div class="innerCard">
+                <div class="frontSide"></div>
+                <div class="backSide">
                   <Link to="/project-vinted" onClick={scrollToTop}>
                     <p>Click for details</p>
                   </Link>
                 </div>
               </div>
             </div>
+            <p class="titleProject">Vinted</p>
+
             <div className="tech">
               <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
               <span> API</span> <span>Axios</span> <span>Express</span>
@@ -75,7 +91,7 @@ const Projects = ({ darkMode, translate }) => {
           </div>
 
           {/* FOURTH PROJECT */}
-          <div className="projects">
+          {/* <div className="projects">
             <div className="cards">
               <h3>DELIVEROO</h3>
               <img src={deliveroo} alt="Avatar" className="image" />
@@ -91,7 +107,7 @@ const Projects = ({ darkMode, translate }) => {
               <span>React</span> <span>JavaScript</span> <span>MongoDB</span>
               <span> API</span>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* --------------- */}
       </main>

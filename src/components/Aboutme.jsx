@@ -17,9 +17,9 @@ const About = ({
         </button>
         <div className="title-about">
           {!translate ? (
-            <h1 className="tracking-in-contract"> About Me :</h1>
+            <h1 className="text-shadow-pop-left"> About Me :</h1>
           ) : (
-            <h1 className="tracking-in-contract"> A Propos de moi :</h1>
+            <h1 className="text-shadow-pop-left"> A Propos de moi :</h1>
           )}
         </div>
         <div className="card-me ">

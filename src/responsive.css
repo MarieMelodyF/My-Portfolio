@@ -14,32 +14,31 @@
   .aboutme.container {
     width: 1010px;
     margin: 0 auto;
-    /* border: 1px solid red; */
   }
 
   .skills-logo {
     width: 1000px;
   }
   .header {
-    height: 100px;
-    width: 200px;
-    /* border: 1px solid rgb(255, 183, 0); */
+    height: auto;
+    width: auto;
     display: flex;
-    /* flex-direction: column; */
-    gap: 2px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(182, 180, 180);
   }
+
   .header h3 {
-    font-size: 15px;
+    font-size: 25px;
   }
   section .myname {
     width: auto;
     margin-left: 10px;
     margin: 2rem;
-    /* border: 1px solid rgb(47, 255, 0); */
     font-size: 30px;
   }
   .scale-in-hor-center {
-    /* border: 1px solid slateblue; */
     width: auto;
     display: flex;
     align-items: center;
@@ -48,26 +47,26 @@
 /* 1050px */
 /* --------------------------- */
 @media screen and (max-width: 1050px) {
-  .header {
+  div .header {
+    height: auto;
+    width: auto;
+    border-bottom: 1px solid rgb(182, 180, 180);
+  }
+
+  div .logo {
     height: 100px;
-    width: 100px;
-    /* border: 1px solid rgb(255, 183, 0); */
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
   }
   .header h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
+
   section .myname {
     width: auto;
     margin-left: 10px;
     margin: 2rem;
-    /* border: 1px solid rgb(47, 255, 0); */
     font-size: 30px;
   }
   .scale-in-hor-center {
-    /* border: 1px solid slateblue; */
     width: auto;
     display: flex;
     align-items: center;
@@ -79,18 +78,10 @@
   .aboutme.container {
     width: 900px;
     margin: 0 auto;
-    /* border: 1px solid red; */
-  }
-  .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    width: 350px;
   }
 
-  .skills-logo {
-    width: 900px;
+  div .foot {
+    width: 700px;
   }
 }
 
@@ -100,7 +91,6 @@
   .header {
     height: 100px;
     width: auto;
-    /* border: 1px solid rgb(255, 183, 0); */
     display: flex;
     gap: 1rem;
   }
@@ -112,11 +102,9 @@
     width: 700px;
     margin-left: 10px;
     margin: 2rem;
-    /* border: 1px solid rgb(47, 255, 0); */
     font-size: 30px;
   }
   .scale-in-hor-center {
-    /* border: 1px solid slateblue; */
     width: auto;
     display: flex;
     align-items: center;
@@ -124,15 +112,16 @@
 
   .aboutme.container {
     width: 700px;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+  }
+  div .text-about {
+    width: 600px;
+    text-align: justify;
   }
 
   .card-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid rgb(47, 255, 0); */
     gap: 2rem;
   }
 
@@ -150,7 +139,10 @@
     width: 700px;
     font-size: 30px;
   }
-  .skills-logo {
+  div .skills-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 700px;
   }
 
@@ -168,46 +160,31 @@
   .aboutme.container {
     width: 450px;
     margin: 0 auto;
-    /* border: 1px solid red; */
   }
 
-  .auto-head {
+  div .header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    margin: 0 auto;
-    /* border: 1px solid red; */
-  }
-  div .card-me {
-    width: 300px !important;
-    /* border: 1px solid rgb(47, 255, 0); */
-  }
-  .header {
-    height: 100px;
-    width: 200px;
-    /* border: 1px solid rgb(255, 183, 0); */
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+    width: auto !important;
   }
   .header h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
-  section .myname {
+  div .logo {
+    height: 70px;
+    padding: 0;
+  }
+
+  div .text {
     width: auto;
-    margin-left: 10px;
-    margin: 2rem;
-    /* border: 1px solid rgb(47, 255, 0); */
-    font-size: 30px;
   }
-  .scale-in-hor-center {
-    /* border: 1px solid slateblue; */
+
+  div .card-me {
     width: auto;
-    display: flex;
-    align-items: center;
   }
+  div .text-about {
+    width: auto;
+  }
+
   div .aboutme h1 {
     font-size: 20px;
   }
@@ -235,14 +212,34 @@
   div .cards h3 {
     font-size: 18px;
   }
+
+  footer {
+    width: auto;
+  }
+  div .foot {
+    width: auto;
+  }
 }
 @media screen and (max-width: 390px) {
+  div .text {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 5px;
+  }
+  div .project {
+    width: 300px;
+  }
+  .header h3 {
+    font-size: 12px;
+  }
   div .project h1 {
     padding-top: 2rem;
     padding-bottom: 1rem;
   }
-  div .skills h1 {
-    padding-top: 2rem;
+
+  div main .skills h1 {
+    width: auto;
   }
   .card-me img {
     height: 200px !important;
@@ -271,7 +268,6 @@
   .aboutme.container {
     width: 310px;
     margin: auto;
-    /* border: 1px solid red; */
   }
   div .card-me {
     display: flex;
@@ -279,11 +275,9 @@
     align-items: center;
     width: 300px !important;
     text-align: justify;
-    /* border: 1px solid rgb(255, 204, 0); */
   }
 
   .auto-head {
-    /* border: 1px solid rebeccapurple; */
     width: 380px !important;
   }
   .scale-in-hor-center {
@@ -307,15 +301,11 @@
 /* --------------------------- */
 @media screen and (max-width: 1124px) {
   .col-left {
-    /* border: 1px solid rebeccapurple; */
     width: 50%;
-    /* height: 200px; */
     text-align: left;
   }
 
   .col-rigth {
-    /* height: 200px; */
-    /* border: 1px solid rgb(243, 237, 235); */
     width: 50%;
     text-align: left;
   }
@@ -339,12 +329,10 @@
   div .about-rawg {
     height: auto;
     width: 450px;
-    /* border: 1px solid yellow; */
   }
   div .car-rawg {
     display: flex;
     width: 400px;
-    /* border: 1px solid rgb(0, 255, 153); */
   }
   div .img-rawg img {
     height: 250px;
@@ -371,12 +359,10 @@
   .auto-head {
     margin: 0 auto;
     width: 450px;
-    /* border: 1px solid red; */
   }
 
   .scale-in-hor-center {
     margin: 0 auto;
-    /* border: 1px solid slateblue; */
     width: 450px;
   }
 
@@ -418,5 +404,23 @@
 
   .translate {
     margin: 2rem;
+  }
+
+  div .rawg h1 {
+    z-index: 2;
+    position: relative;
+  }
+
+  .rawg {
+    position: relative;
+  }
+  div .underline {
+    height: 6px;
+    width: 200px;
+    background-color: rgba(84, 152, 163, 0.708);
+    position: absolute;
+    top: 26px;
+    left: 96px;
+    z-index: 1;
   }
 }
