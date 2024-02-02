@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import Home from "/src/images/rawg/Home.png/";
-import OneGame from "/src/images/rawg/OneGame.png/";
+import OneGame from "/src/images/rawg/Onegame.png/";
 import GameReview from "/src/images/rawg/GameReview.png/";
 import GameFav from "/src/images/rawg/GameFav.png/";
 import log from "/src/images/rawg/log.png/";
