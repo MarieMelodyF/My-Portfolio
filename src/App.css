@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
-/* @import "./Header.css"; */
 @import "./animation.css";
 @import "./responsive.css";
+@import "./Header.css";
 
 html {
   scroll-behavior: smooth;
@@ -11,7 +11,11 @@ h1 {
   font-size: 40px;
   font-weight: bold;
 }
-
+.mode-switch {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
 h3 {
   font-size: 25px;
   /* text-decoration: underline; */
@@ -55,12 +59,16 @@ a:hover {
 }
 
 .header {
+  align-items: center;
+  border-bottom: 1px solid rgb(182, 180, 180);
+}
+.text {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
   width: 500px;
 }
+
 section .myname {
   display: flex;
   justify-content: center;
@@ -69,6 +77,7 @@ section .myname {
   margin-left: 10px;
   margin: 2rem;
 }
+
 section {
   display: flex;
   justify-content: space-around;
@@ -276,7 +285,37 @@ section {
 .img-rawg img {
   height: 350px;
 }
+/* --------- */
+/* MODAL  */
+/* --------- */
 
+.modal-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.934); /* Fond semi-transparent */
+  z-index: 9999; /* Z-index élevé pour apparaître au-dessus du contenu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgb(30, 30, 30);
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50vw;
+  box-shadow: 0 0 10px white;
+}
+.contact {
+  background-color: rgb(30, 30, 30);
+}
+/* --------- */
+/* MODAL  */
+/* --------- */
 .contact-form {
   height: calc(100vh - 10vh);
 }
@@ -331,14 +370,19 @@ section {
 
 footer {
   background-color: rgba(38, 36, 36, 0.306);
-  padding-top: 1rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  height: 50px;
 }
 
 .foot {
-  padding-top: 1rem;
+  border: 1px solid red;
+  width: 1000px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 

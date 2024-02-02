@@ -10,10 +10,14 @@ import Deliveroo from "./pages/Projects/Deliveroo";
 import Rawg from "./pages/Projects/GamePad";
 import Footer from "./components/Footer";
 import ContactForm from "./pages/Contact";
+// import ContactFormCOPY from "./pages/Contactcopy";
+
 import SnakeGame from "./SnakeGame/SnakeGame";
 
 function App() {
   const [darkMode, setDarkMode] = useState(Cookies.get("mode") || false);
+  const [visible, setVisible] = useState(false);
+  console.log(visible);
 
   const handleMode = (mode) => {
     if (mode) {
@@ -39,6 +43,8 @@ function App() {
           setDarkMode={setDarkMode}
           handleMode={handleMode}
           translate={translate}
+          setVisible={setVisible}
+          visible={visible}
         />
         <Routes>
           <Route
@@ -81,7 +87,7 @@ function App() {
               />
             }
           ></Route>
-          <Route
+          {/* <Route
             path="/project-deliveroo"
             element={
               <Deliveroo
@@ -90,10 +96,13 @@ function App() {
                 translate={translate}
               />
             }
-          ></Route>
+          ></Route> */}
+
           <Route
             path="/contact"
-            element={<ContactForm darkMode={darkMode} />}
+            element={
+              <ContactForm darkMode={darkMode} setVisible={setVisible} />
+            }
           ></Route>
           <Route
             path="/fun"

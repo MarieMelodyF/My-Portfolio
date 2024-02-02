@@ -10,8 +10,8 @@ const About = ({
   translate,
 }) => {
   return (
-    <section className={darkMode ? "dark " : "light "}>
-      <main className="aboutme container">
+    <section className={darkMode ? "dark  " : "light "}>
+      <main className="aboutme container ">
         <button className="translate" onClick={handleClick}>
           {translate ? <p>Traduire Ang</p> : <p>Translate Fr</p>}
         </button>

@@ -1,11 +1,18 @@
 .content {
   position: relative;
 }
+.logo {
+  height: 150px;
+  border-radius: 50%;
+  margin: 2rem;
+}
 
+.auto-head {
+  margin: 0 auto;
+}
 .content h2 {
   font-size: 4em;
   position: absolute;
-  /* transform: translate(100%, 100%); */
   margin: auto;
 }
 
